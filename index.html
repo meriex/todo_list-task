@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #todo-list {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .todo-item {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .todo-item:last-child {
+            border-bottom: none;
+        }
+
+        button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="todo-list">
+        <h1>To-do List</h1>
+        <input type="text" id="new-item" placeholder="Enter new item">
+        <button onclick="addItem()">Add</button>
+        <ul id="items"></ul>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
